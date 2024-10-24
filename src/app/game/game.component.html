@@ -1,0 +1,95 @@
+<body>
+  <h1 class="title">QUI VEUT GAGNER <br>LE JACKPOT ?</h1>
+  <button routerLink="/home" class="back"><h2>BACK</h2></button>
+  <button class="gain" (click)="forEarningsTable()">$</button>
+  <button class="auto" (click)="launchModeAuto()">Auto</button>
+  <button id="mise-plus" (click)="increaseBet()">+</button>
+  <button id="mise-moins" (click)="decreaseBet()">-</button>
+  <div class="help">
+    <button (click)="forHelp()">
+      <h2>HELP</h2>
+    </button>
+    <div *ngIf="showHelp" class="help-modal">
+      <h1 class="rules">LES RÈGLES DU JEU <br><br></h1>
+      <p>
+        1. Le bouton PLAY fait tourner les roues. Les combinaisons sur lignes de paiement débouchent sur des gains, conformément au tableau des gains.<br>
+        2. Le bouton $ permet d'afficher le tableau des gains. <br>
+        3. Le bouton STOP fait arrêter les roues. <br>
+        4. Lorsque le bouton AUTO est activé, vous jouez automatiquement avec la même mise que celle placée avant le bouton PLAY. Appuyez sur ce même bouton pour désactiver le mode auto.<br>
+      </p>
+      <h2 class="payment">LIGNES DE PAIEMENT</h2>
+      <img src="../../assets/lignes_de_paiement.png" alt="Image des lignes de paiement">
+      <p class="payment-text">Tous les symboles sont comptabilisés de gauche à droite, en partant de la roue gauche. Tous les 
+        gains sont multipliés par la mise en ligne. Les erreurs rendent tous les gains invalides. <br><br><br>
+      </p>
+    </div>
+  </div>
+  <div id="slot-machine">
+    <div id="slot-body">
+      <div id="slot-frame">
+        <div id="slot-frame-2">
+          <div id="slot-numbers">
+            <h2>SOLDE BANCAIRE:</h2>
+            <p>{{ slotNumbersElement }}</p>
+          </div>
+          <div id="slot-mise">
+            <h2>MISE</h2>
+            <p>{{slotMise}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="doors">
+    <div class="door left">
+      <div class="boxes" [ngClass]="{'spinning': isLeftSpinning}" [style.will-change]="'transform'">
+        <div class="box" *ngFor="let element of leftelements">
+          <img [src]="element.imageURL" alt="Image {{element.id}}">
+        </div>
+      </div>
+    </div>
+    <div class="door center">
+      <div class="boxes" [ngClass]="{'spinning': isRightSpinning}" [style.will-change]="'transform'">
+        <div class="box" *ngFor="let element of rightelements">
+          <img [src]="element.imageURL" alt="Image {{element.id}}">
+        </div>
+      </div>
+    </div>
+    <div class="door right">
+      <div class="boxes" [ngClass]="{'spinning': isCenterSpinning}" [style.will-change]="'transform'">
+        <div class="box" *ngFor="let element of centerelements">
+          <img [src]="element.imageURL" alt="Image {{element.id}}">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="tableau-des-gains" *ngIf="showEarningsTable">
+    <h2 class="tableau-des-gains-title">TABLEAU DES GAINS</h2>
+    <button class="quit-tableau" (click)="forEarningsTable()">x</button>
+    <div class="Earnings-left" *ngFor="let gains of gainelementleft">
+      <div id="Earnings-left-image">
+        <img [src]="gains.imageURL" alt="Image {{gains.id}}">
+      </div>
+      <div id="Earnings-left-text">
+        <p>{{gains.gain}}</p>
+      </div>
+    </div>
+    <div class="Earnings-right" *ngFor="let gainsr of gainelementright">
+      <div id="Earnings-right-image">
+        <img [src]="gainsr.imageURL" alt="Image {{gainsr.id}}">
+      </div>
+      <div id="Earnings-right-text">
+        <p>{{gainsr.gain}}</p>
+      </div>
+    </div>
+  </div>
+  <button class='play' (click)="startAnimation()" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">PLAY</button>
+  <button class='stop' (click)="stopAnimation()">STOP</button>
+</body>
+<button class="music" (click)="playMusic()">
+  <img *ngIf="audio && !audio.paused" src="../../assets/music_active.png" alt="Music Active"/>
+  <img *ngIf="!audio || audio.paused" src="../../assets/music_noactive.png" alt="Music No Active"/>
+</button>
+<button class="raiseVolume" (click)="raiseVolume()">+</button>
+<button class="lowerVolume" (click)="lowerVolume()">-</button>
+

@@ -1,0 +1,588 @@
+body {
+    background-color: rgb(42, 42, 42);
+    box-shadow: inset aqua 4px 4px 10px;
+    border: 2px solid aqua;
+}
+
+h1.title {
+    color: gold;
+    text-align: center;
+    font-size: 50px;
+    position: relative;
+    top: 15%; left: 32%;
+    font-family: 'Casino Flat', sans-serif;
+    text-shadow: rgb(0, 221, 255) 2px 1px 7px;
+    border: 2px solid aqua;
+    width: 36%;
+    background-color: black;
+    box-shadow: inset aqua 2px 2px 10px;
+    z-index: 1;
+}
+
+button.back {
+    position: relative;
+    top: -100px; left: 10px;
+    height: 50px;
+    width: 100px;
+    background-color: black;
+    outline: none;
+    box-sizing: border-box;
+    box-shadow: rgb(143, 143, 140) 2px 1px 10px;
+}
+
+button.music {
+    font-size: 20px;
+    background-color: transparent;
+    z-index: 1;
+    position: relative;
+    top: 890px; left: 50px;
+    width: 5%;
+}
+
+button.quit-tableau {
+    text-shadow: 2px 2px pink;
+	line-height: 20px;
+	text-align: center;
+	display: inline-block;
+    font-size: 40px;
+	width: 50px;
+    height: 50px;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	-o-border-radius: 100px;
+    border-radius: 100px;
+    border: 2px solid white;
+	background-color: red;
+	color: white;
+	background-color: black;
+	background-image: -o-linear-gradient(left top, pink 3%, black 22%, rgb(255, 255, 255) 99%);
+	background-image: -moz-linear-gradient(left top, pink 3%, black 22%,  rgb(23, 23, 23) 99%);
+	background-image: -webkit-linear-gradient(left top, pink 3%, black 22%,  rgb(23, 23, 23)99%);
+	cursor: pointer;
+}
+
+button.raiseVolume {
+    text-shadow: 2px 2px pink;
+	line-height: 20px;
+	text-align: center;
+	display: inline-block;
+    font-size: 40px;
+	width: 50px;
+    height: 50px;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	-o-border-radius: 100px;
+    border-radius: 100px;
+    border: 2px solid white;
+	background-color: red;
+	color: white;
+	background-color: black;
+	background-image: -o-linear-gradient(left top, pink 3%, black 22%, rgb(255, 255, 255) 99%);
+	background-image: -moz-linear-gradient(left top, pink 3%, black 22%,  rgb(23, 23, 23) 99%);
+	background-image: -webkit-linear-gradient(left top, pink 3%, black 22%,  rgb(23, 23, 23)99%);
+	cursor: pointer;
+    position: relative;
+    top: 250px; left: 50px;
+}
+
+button.lowerVolume {
+    z-index: 1;
+    position: relative;
+    top: -100px; left: 50px;
+    text-shadow: 2px 2px pink;
+	line-height: 20px;
+	text-align: center;
+	display: inline-block;
+    font-size: 40px;
+	width: 50px;
+    height: 50px;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	-o-border-radius: 100px;
+    border-radius: 100px;
+    border: 2px solid white;
+	background-color: red;
+	color: white;
+	background-color: black;
+	background-image: -o-linear-gradient(left top, pink 3%, black 22%, rgb(255, 255, 255) 99%);
+	background-image: -moz-linear-gradient(left top, pink 3%, black 22%,  rgb(23, 23, 23) 99%);
+	background-image: -webkit-linear-gradient(left top, pink 3%, black 22%,  rgb(23, 23, 23)99%);
+	cursor: pointer;
+}
+
+button h2 {
+    color: aliceblue;
+    position: relative;
+    top: -6px;
+}
+
+img {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.auto {
+    font-size: 20px;
+    text-align:center;
+    display: inline-block;
+    margin:0px;
+    font-weight: bold;
+    padding: 0px 0 10px 10px ;
+    background-color: rgb(205, 199, 73);
+    text-shadow: 4px 4px black, 3px 3px rgb(182, 182, 182);
+    color: white;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -o-border-radius: 7px;
+    border-radius: 7px;
+    border: 3px solid rgb(123, 103, 13);
+    box-shadow: 0 .2em rgb(138, 113, 13);
+    cursor: pointer;
+    position: relative;
+    width: 100px;
+    position: absolute;
+    top: 79%; left: 51.5%;
+    z-index: 1;
+}
+
+.play {
+    font-size: 30px;
+    text-align:center;
+    display: inline-block;
+    margin:0px;
+    font-weight: bold;
+    padding: 0px 0 10px 10px ;
+    background-color: blue;
+    text-shadow: 4px 4px black, 3px 3px rgb(182, 182, 182);
+    color: white;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -o-border-radius: 7px;
+    border-radius: 7px;
+    border: 3px solid rgb(13, 25, 123);
+    box-shadow: 0 .2em rgb(0, 62, 120);
+    cursor: pointer;
+    position: relative;
+    width: 190px;
+    position: absolute;
+    top: 78%; left: 57%;
+}
+
+.help {
+    button {
+        background-color: black;
+        box-sizing: border-box;
+        padding: 20px;
+        box-shadow: rgb(239, 236, 236) 3px 3px 7px;
+        margin-right: 20px;
+        outline: none;
+        font-size: 20px;
+        height: 50px;
+        width: 120px;
+        position: relative;
+        left: 93%; top: -140px;
+    }
+
+    h2 {
+        color: white;
+        position: absolute;
+        bottom: 0%; right: 0%; left: 0%;
+    }
+
+    .help-modal {
+        position: absolute;
+        top: 10%;
+        left: 30%;
+        width: 40%;
+        height: 70%;
+        background-color: rgba(71, 65, 65, 0.8);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 5px solid black;
+        z-index: 1;
+        overflow: auto;
+        h1.rules {
+            color: rgb(251, 255, 0);
+            align-items: center;
+            font-size: 40px;
+            text-decoration: solid;
+            font-weight: bolder;
+            position: absolute;
+            top: 0%;
+            font-family: 'Casino', sans-serif;
+            text-shadow: 2px 2px 10px rgb(167, 165, 165);
+        }
+    }
+
+    p {
+        text-align: center;
+        position: relative;
+        top: -100px;
+        font-size: 25px;
+        color: white;
+        text-shadow: 2px 2px 10px rgb(167, 165, 165);
+    }
+    img {
+        height: 50%;
+        width: 50%;
+        position: absolute;
+        top: 500px;
+    }
+    h2.payment {
+        color: gold;
+        text-align: center;
+        position: absolute;
+        top: 420px;
+        font-family: 'Casino', sans-serif;
+        text-shadow: 2px 2px 10px rgb(167, 165, 165);
+        font-size: 40px;
+    }
+    p.payment-text {
+        position: absolute;
+        top: 850px;
+    }
+}
+
+button.stop {
+    font-size: 30px;
+    text-align:center;
+    display: inline-block;
+    margin:0px;
+    font-weight: bold;
+    padding: 0px 0 10px 10px ;
+    background-color: red;
+    text-shadow: 4px 4px black, 3px 3px rgb(182, 182, 182);
+    color: white;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -o-border-radius: 7px;
+    border-radius: 7px;
+    border: 3px solid rgb(115, 36, 20);
+    box-shadow: 0 .2em rgb(99, 32, 16);
+    cursor: pointer;
+    position: relative;
+    width: 190px;
+    position: absolute;
+    top: 85%; left: 57%;
+}
+
+.gain {
+    position: absolute;
+    top: 810px; left: 1010px;
+    text-shadow: 2px 2px pink;
+	line-height: 20px;
+	text-align: center;
+	display: inline-block;
+    font-size: 40px;
+	width: 50px;
+    height: 50px;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	-o-border-radius: 100px;
+    border-radius: 100px;
+    border: 2px solid white;
+	background-color: red;
+	-webkit-box-shadow:  0 .2em maroon;
+	-moz-box-shadow:  0 .2em maroon;
+	-o-box-shadow:  0 .2em maroon;
+	box-shadow:  0 .2em maroon;
+	color: white;
+	background-color: red;
+	background-image: -o-linear-gradient(left top, pink 3%, red 22%, maroon 99%);
+	background-image: -moz-linear-gradient(left top, pink 3%, red 22%, maroon 99%);
+	background-image: -webkit-linear-gradient(left top, pink 3%, red 22%, maroon 99%);
+	cursor: pointer;
+    z-index: 1;
+}
+
+#slot-machine {
+    border-radius: 10px;
+    box-shadow: 0 1px 100px rgba(0, 0, 0, 0.6), 0 1px 2px rgba(0, 0, 0, 0.8);
+    height: 600px;
+    margin: 50px auto;
+    position: relative;
+    width: 700px; top: -20px;
+}
+
+#slot-body {
+    background: red;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    border: 2px solid black;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    box-shadow: inset 0 0 25px rgba(0, 168, 252, 0.6);
+    height: 450px;
+    margin: 50px auto;
+    position: relative;
+    width: 700px;
+    z-index: -1;
+}
+
+#slot-frame {
+    background: #1b1b1b;
+    background: -moz-linear-gradient(top, #1b1b1b 0%, #383838 8%, #3a3a3a 20%, #0a0a0a 47%, #010101 50%, #0d0d0d 54%, #444444 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1b1b1b), color-stop(8%,#383838), color-stop(20%,#3a3a3a), color-stop(47%,#0a0a0a), color-stop(50%,#010101), color-stop(54%,#0d0d0d), color-stop(100%,#444444));
+    background: -webkit-linear-gradient(top, #1b1b1b 0%,#383838 8%,#3a3a3a 20%,#0a0a0a 47%,#010101 50%,#0d0d0d 54%,#444444 100%);
+    background: -o-linear-gradient(top, #1b1b1b 0%,#383838 8%,#3a3a3a 20%,#0a0a0a 47%,#010101 50%,#0d0d0d 54%,#444444 100%);
+    background: -ms-linear-gradient(top, #1b1b1b 0%,#383838 8%,#3a3a3a 20%,#0a0a0a 47%,#010101 50%,#0d0d0d 54%,#444444 100%);
+    background: linear-gradient(to bottom, #1b1b1b 0%,#383838 8%,#3a3a3a 20%,#0a0a0a 47%,#010101 50%,#0d0d0d 54%,#444444 100%);
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    -moz-box-shadow: 0 0 16px rgba(255, 255, 255, 0.3);
+    -webkit-box-shadow: 0 0 16px rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 16px rgba(255, 255, 255, 0.3), 0 1px 1px rgba(255, 255, 255, 0.5), 0 -1px 1px rgba(255, 255, 255, 0.2), inset 0 -2px 15px #000;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 2px solid #ED5D1E;
+    height: 400px;
+    left: 20%;
+    margin-left: -85px;
+    position: absolute;
+    top: 25px;
+    width: 590px;
+    z-index: 1;
+}
+
+#slot-frame-2 {
+    background: black;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    border: 2px solid rgb(35, 199, 221);
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    box-shadow: inset 0 15px 15px 0px rgba(0, 229, 255, 0.6);
+    height: 152px;
+    margin: 50px auto;
+    position: relative;
+    top: 370px; left: -59px;
+    width: 702px;
+    z-index: -1;
+}
+
+#slot-numbers {
+    width: 30%; height: 25%;
+    position: relative;
+    top: 40px; left: 3%;
+    background-color: black;
+    border: 1px solid aqua;
+    border-radius: 5px;
+    background: -moz-linear-gradient(top, #1b1b1b 0%, #383838 8%, #3a3a3a 20%, #0a0a0a 47%, #010101 50%, #0d0d0d 54%, #444444 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1b1b1b), color-stop(8%,#383838), color-stop(20%,#3a3a3a), color-stop(47%,#0a0a0a), color-stop(50%,#010101), color-stop(54%,#0d0d0d), color-stop(100%,#444444));
+    background: -webkit-linear-gradient(top, #1b1b1b 0%,#383838 8%,#3a3a3a 20%,#0a0a0a 47%,#010101 50%,#0d0d0d 54%,#444444 100%);
+    background: -o-linear-gradient(top, #1b1b1b 0%,#383838 8%,#3a3a3a 20%,#0a0a0a 47%,#010101 50%,#0d0d0d 54%,#444444 100%);
+    background: -ms-linear-gradient(top, #1b1b1b 0%,#383838 8%,#3a3a3a 20%,#0a0a0a 47%,#010101 50%,#0d0d0d 54%,#444444 100%);
+    background: linear-gradient(to bottom, #1b1b1b 0%,#383838 8%,#3a3a3a 20%,#0a0a0a 47%,#010101 50%,#0d0d0d 54%,#444444 100%);
+}
+
+#slot-numbers h2 {
+    color: gold;
+    position: relative;
+    top: -50px;
+    text-align: left;
+    font-family: 'Casino Shadow', sans-serif;
+    font-size: 25px;
+}
+
+#slot-numbers p {
+    color: #78FF00;
+    font-weight: bold;
+    z-index: 2;
+    font-size: 28px;
+    position: relative;
+    top: -75px; left: 110px;
+}
+
+#slot-mise {
+    width: 10%; height: 20%;
+    position: relative;
+    top: 60px; left: 38%;
+    background-color: black;
+    border: 1px solid aqua;
+    border-radius: 5px;
+    background: -moz-linear-gradient(top, #1b1b1b 0%, #383838 8%, #3a3a3a 20%, #0a0a0a 47%, #010101 50%, #0d0d0d 54%, #444444 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1b1b1b), color-stop(8%,#383838), color-stop(20%,#3a3a3a), color-stop(47%,#0a0a0a), color-stop(50%,#010101), color-stop(54%,#0d0d0d), color-stop(100%,#444444));
+    background: -webkit-linear-gradient(top, #1b1b1b 0%,#383838 8%,#3a3a3a 20%,#0a0a0a 47%,#010101 50%,#0d0d0d 54%,#444444 100%);
+    background: -o-linear-gradient(top, #1b1b1b 0%,#383838 8%,#3a3a3a 20%,#0a0a0a 47%,#010101 50%,#0d0d0d 54%,#444444 100%);
+    background: -ms-linear-gradient(top, #1b1b1b 0%,#383838 8%,#3a3a3a 20%,#0a0a0a 47%,#010101 50%,#0d0d0d 54%,#444444 100%);
+    background: linear-gradient(to bottom, #1b1b1b 0%,#383838 8%,#3a3a3a 20%,#0a0a0a 47%,#010101 50%,#0d0d0d 54%,#444444 100%);
+}
+
+#slot-mise h2 {
+    color: gold;
+    position: relative;
+    top: -50px;
+    text-align: center;
+    font-family: 'Casino Shadow', sans-serif;
+    font-size: 25px;
+}
+
+#slot-mise p {
+    color: #78FF00;
+    font-weight: bold;
+    z-index: 2;
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+    top: -65px; left: 0px;
+}
+
+#mise-plus {
+    color: aqua;
+    background-color: black;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 652px; left: 743px;
+    box-shadow: rgb(0, 242, 255) 3px 3px 1px;
+    border: 1px solid aqua;
+    border-radius: 2px;
+    z-index: 1;
+}
+
+#mise-moins {
+    color: aqua;
+    background-color: black;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 652px; left: 830px;
+    box-shadow: rgb(0, 242, 255) 3px 3px 1px;
+    border: 1px solid aqua;
+    border-radius: 2px;
+    z-index: 1;
+}
+
+.doors {
+    display: flex;
+    position: relative;
+    top: -640px; left: 0%;
+    align-items: center;
+    justify-content: center;
+}
+
+.door {
+    background: white;
+    width: 120px;
+    height: 355px;
+    border-radius: 10px;
+    border: 5px solid rgb(237, 235, 235);
+    overflow: hidden;
+    border-radius: 5px;
+    margin: 20px;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+
+.boxes {
+    transition: transform 1s ease-in-out;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+}
+
+.spinning {
+    animation: spin 20ms linear infinite;
+    -webkit-will-change: transform;
+    -moz-will-change: transform;
+    will-change: transform;
+}
+
+
+@keyframes spin {
+    to {
+        transform: translateY(-300px);
+    }
+}
+
+.tableau-des-gains {
+    position: absolute;
+    top: 10%;
+    left: 30%;
+    width: 40%;
+    height: 70%;
+    background-color: rgba(71, 65, 65, 0.8);
+    justify-content: center;
+    align-items: center;
+    border: 5px solid black;
+    z-index: 1;
+    h2.tableau-des-gains-title {
+        color: rgb(251, 255, 0);
+        align-items: center;
+        font-size: 40px;
+        text-decoration: solid;
+        text-align: center;
+        font-weight: bolder;
+        position: absolute;
+        top: 0%; left: 29%;
+        font-family: 'Casino', sans-serif;
+        text-shadow: 2px 2px 10px rgb(167, 165, 165);
+    }
+}
+
+#Earnings-left-image {
+    display: flex;
+    flex-direction: column;
+    margin-top: -10px;
+    position: relative;
+}
+
+#Earnings-left-image img {
+    position: relative;
+    width: 15%;
+    top: 70px;
+    margin-bottom: -100px;
+}
+
+#Earnings-left-text {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 10px;
+    top: 80px; left: 120px;
+    p {
+        font-family: 'Casino', sans-serif;
+        font-size: 30px;
+        color: gold;
+    }
+}
+
+#Earnings-right-image {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0px;
+    position: relative;
+    top: -460px; left: 48%;
+}
+
+#Earnings-right-image img {
+    position: relative;
+    width: 15%;
+    top: 70px;
+    margin-bottom: -1500px;
+}
+
+#Earnings-right-text {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 10px;
+    top: -390px; left: 62%;
+    p {
+        font-family: 'Casino', sans-serif;
+        font-size: 30px;
+        color: gold;
+    }
+}
